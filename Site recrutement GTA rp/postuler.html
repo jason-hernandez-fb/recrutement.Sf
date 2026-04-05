@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de candidature GTA RP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulaire de candidature</h1>
+        <button onclick="window.location.href='index.html'">Retour</button>
+    </header>
+    <main>
+        <form id="candidatureForm">
+            <label for="prenomHrp">Prénom HRP :</label>
+            <input type="text" id="prenomHrp" name="prenomHrp" required>
+
+            <label for="ageHrp">Âge HRP :</label>
+            <input type="number" id="ageHrp" name="ageHrp" required>
+
+            <label for="discordID">ID Discord :</label>
+            <input type="number" id="discordID" name="discordID" required>
+
+            <label for="pseudoDiscord">Pseudo Discord :</label>
+            <input type="text" id="pseudoDiscord" name="pseudoDiscord" required>
+
+            <label for="pseudoRp">Pseudo RP :</label>
+            <input type="text" id="pseudoRp" name="pseudoRp" required>
+
+            <label for="prenomNom">Prénom Nom :</label>
+            <input type="text" id="prenomNom" name="prenomNom" required>
+
+            <label for="lieuxNaissance">Lieu de naissance :</label>
+            <input type="text" id="lieuxNaissance" name="lieuxNaissance" required>
+
+            <label for="sexe">Sexe :</label>
+            <select id="sexe" name="sexe" required>
+                <option value="masculin">Masculin</option>
+                <option value="feminin">Féminin</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <label for="tel">Numéro de téléphone :</label>
+            <input type="text" id="tel" name="tel" placeholder="555-XXX-XXXX" pattern="\d{3}-\d{3}-\d{4}" required>
+
+            <label for="rib">RIB :</label>
+            <input type="text" id="rib" name="rib" placeholder="XXX-XXX-XXX" pattern="\d{3}-\d{3}-\d{3}" required>
+
+            <label for="disponibilite">Disponibilités :</label>
+            <textarea id="disponibilite" name="disponibilite" rows="3"></textarea>
+
+            <label for="presentation">Présentation :</label>
+            <textarea id="presentation" name="presentation" rows="3"></textarea>
+
+            <label for="diplome">Diplôme :</label>
+            <input type="text" id="diplome" name="diplome">
+
+            <label for="motivation">Motivation :</label>
+            <textarea id="motivation" name="motivation" rows="3"></textarea>
+
+            <label>Permis :</label>
+            <div>
+                <input type="checkbox" id="permisVoiture" name="permis" value="voiture"> Voiture
+                <input type="checkbox" id="permisMoto" name="permis" value="moto"> Moto
+                <input type="checkbox" id="permisPL" name="permis" value="poids lourd"> Poids lourd
+            </div>
+
+            <label for="conclusion">Conclusion :</label>
+            <textarea id="conclusion" name="conclusion" rows="3"></textarea>
+
+            <button type="submit">Envoyer la candidature</button>
+        </form>
+
+        <div id="confirmation" style="display:none;">
+            <p>Merci pour votre candidature !</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffe4f0;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+header, footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #d63384;
+}
+
+button {
+    background-color: #fff0f5;
+    color: #d63384;
+    border: 1px solid #d63384;
+    border-radius: 8px;
+    padding: 10px 16px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background-color: #d63384;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(198, 0, 72,0.3);
+}
+
+form, .admin-panel, .salon-horaires {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 900px;
+}
+
+.candidat-card {
+    border: 1px solid #f5c6e7;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff0f5;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.candidat-card:hover {
+    box-shadow: 0 4px 12px rgba(198, 0, 72, 0.3);
+}
+
+.details { display: none; }
+
+.role-citoyen { background-color:#ffe0f7; color:#d63384; padding:4px 8px; border-radius:6px; font-weight:bold; }
+.role-staff { background-color:#ffd1e3; color:#a60055; padding:4px 8px; border-radius:6px; font-weight:bold; }
+.role-accepted { background-color:#ffd6f0; color:#80004d; padding:4px 8px; border-radius:6px; font-weight:bold; }

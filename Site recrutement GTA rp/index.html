@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recrutement GTA RP</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recrutement GTA RP</h1>
+        
+        <!-- Bouton Postuler -->
+        <div style="text-align:center; margin:20px 0;">
+            <button onclick="window.location.href='postuler.html'">Postuler</button>
+        </div>
+
+        <!-- Bouton Visiteurs -->
+        <div style="text-align:center; margin:20px 0;">
+            <button id="btnVisiteurs">Voir les visiteurs</button>
+        </div>
+
+        <!-- Liste pseudos RP cachée -->
+        <div id="listePseudos" style="display:none; margin-top:20px;"></div>
+
+        <!-- Bouton Staff -->
+        <div style="text-align:center; margin:30px 0;">
+            <button id="btnStaff">Staff</button>
+        </div>
+
+        <!-- Bouton pour gérer les candidatures (visible seulement pour Staff) -->
+        <div style="text-align:center; margin:20px 0; display:none;" id="btnGestionCandidaturesContainer">
+            <button id="btnGestionCandidatures">Gérer les candidatures</button>
+        </div>
+
+        <!-- Zone candidatures -->
+        <div id="gestionCandidatures" style="display:none; margin-top:20px;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
